@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int T;
+    int N;
+	cin>>T;	
+	
+	for (int i=1;i<T+1;i++) {
+
+	cin>>N;
+
+	if(N%4==0){
+	  cout <<"TRUE"<<endl;  
+	}
+	else{
+	    cout <<"FALSE"<<endl; 
+	}
+	
+	}
+	
+	return 0;
+}
+

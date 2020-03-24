@@ -1,0 +1,31 @@
+#include<iostream>
+#include<cstdlib>
+#include<string>
+
+using namespace std;
+
+int main(int argc, char *argv[])
+{
+	int a, b, c, d;
+	char k;
+	
+	if(argc != 4)
+	{
+		cout<<"Error, el programa "<<argv[0]<<" debe proporcionar solo dos parametros:"<<argv[0]<<"A y B"<<endl;
+		return 1;
+	}
+	k=atoi(argv[1]);
+	a=stoi(argv[2]);
+	b=stoi(argv[3]);
+	if (k=='square')
+	{
+	    c=a*a;
+	    cout<<c;
+	}
+	else
+	{
+	    d=a*b;
+	    cout<<d;
+	}
+	return 0;
+}
